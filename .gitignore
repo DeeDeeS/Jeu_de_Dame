@@ -177,6 +177,7 @@ ehthumbs.db
 ##Code::Blocks
 ############
 *.cbp
+*.exe
 
 # Folder config file
 Desktop.ini
