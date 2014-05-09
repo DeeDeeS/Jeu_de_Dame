@@ -8,9 +8,14 @@ class Pions
 
         int getX();
         int getY();
-        void setX(int x);
+        void setColor(char color);
+        void setBool(bool);
         void setY(int y);
+        void setX(int x);
         bool isDame();
+        void DeplacePions(int x, int y);
+        void DeplaceDames();
+        void MangePions();
         Pions();
         Pions(char color, bool isPion, int x, int y);
         virtual ~Pions();

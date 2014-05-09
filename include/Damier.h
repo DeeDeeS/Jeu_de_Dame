@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include <Pions.h>
 
 
 class Damier
@@ -12,6 +13,8 @@ class Damier
 
             Damier();
             ~Damier();
+            //vector<Pions>* pos;
+
         private:
             Damier& operator= (const Damier&){}
             Damier (const Damier&){}
