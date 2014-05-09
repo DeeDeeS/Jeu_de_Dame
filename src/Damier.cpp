@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include <string>
 
 using namespace std;
 using namespace sf;
@@ -11,56 +12,40 @@ using namespace sf;
 
 Damier::Damier()
 {
+    vector<Pions> pos;
     cout << "construction Damier"<< endl;
-    char damier [10][10]={  'R','V','R','V','R','V','R','V','R','V',
-                            'V','R','V','R','V','R','V','R','V','R',
-                            'R','V','R','V','R','V','R','V','R','V',
-                            'V','R','V','R','V','R','V','R','V','R',
-                            'R','V','R','V','R','V','R','V','R','V',
-                            'V','R','V','R','V','R','V','R','V','R',
-                            'B','V','B','V','B','V','B','V','B','V',
-                            'V','B','V','B','V','B','V','B','V','B',
-                            'B','V','B','V','B','V','B','V','B','V',
-                            'V','B','V','B','V','B','V','B','V','B'
+    int damier [10][10]={    1,0,1,0,1,0,1,0,1,0,
+                             0,1,0,1,0,1,0,1,0,1,
+                             1,0,1,0,1,0,1,0,1,0,
+                             0,1,0,1,0,1,0,1,0,1,
+
+                             3,0,3,0,3,0,3,0,3,0,
+                             0,3,0,3,0,3,0,3,0,3,
+
+                             2,0,2,0,2,0,2,0,2,0,
+                             0,2,0,2,0,2,0,2,0,2,
+                             2,0,2,0,2,0,2,0,2,0,
+                             0,2,0,2,0,2,0,2,0,2,
+
                         };
-    Pions j1;
-    Pions j2;
-    int nbre_case_vide=0;
-    //ligne
-    for (int i=0;i<=9;i++)
+    Pions j11('b', true, 1,1),j12('b', true, 1,3),j13('b', true, 1,5),j14('b', true, 1,7),j15('b', true, 1,9),j16('b', true, 2,2),j17('b', true, 2,4),j18('b', true, 2,6),j19('b', true, 2,8),j110('b', true, 2,10), j111('b', true, 3,1),j112('b', true, 3,3),j113('b', true, 3,5),j114('b', true, 3,7),j115('b', true, 3,9),j116('b', true, 4,2),j117('b', true, 4,4),j118('b', true, 4,6),j119('b', true, 4,8),j120('b', true, 4,10);
+    Pions j21('w', true, 7,1),j22('w', true, 7,3),j23('w', true, 7,5),j24('w', true, 7,7),j25('w', true, 7,9),j26('w', true, 8,2),j27('w', true, 8,4),j28('w', true, 8,6),j29('w', true, 8,8),j210('w', true, 8,10), j211('w', true, 9,1),j212('w', true, 9,3),j213('w', true, 9,5),j214('w', true, 9,7),j215('w', true, 9,9),j216('w', true, 10,2),j217('w', true, 10,4),j218('w', true, 10,6),j219('w', true, 10,8),j220('w', true, 10,10);
+    int x,y;
+    for(int i=1;i<=10;i++)
     {
-        //colonne
-        for(int j=0;j<=9;j++)
+        for(int j=1;j<=10;j++)
         {
-            switch(damier[i][j])
+            if(damier[i][j]== 1)
             {
-            case 'R':
-
-                    j1.setColor('R');
-                    j1.setBool(true);
-                    j1.setX(i);
-                    j1.setY(j);
-
-                break;
-
-            case 'V':
-                    nbre_case_vide=nbre_case_vide+1;
-                    cout << nbre_case_vide;
-                break;
-            case 'B':
-                    j2.setColor('B');
-                    j2.setBool(true);
-                    j2.setX(i);
-                    j2.setY(j);
-
-            default:
-                    cout << "";
+               x =i*62,6;
+               y
 
             }
         }
     }
+
         // Create the main window
-    RenderWindow app(VideoMode(600, 600), "Jeu de Dame");
+    RenderWindow app(VideoMode(626, 600), "Jeu de Dame");
 
     // Load a sprite to display
     Texture plateau;

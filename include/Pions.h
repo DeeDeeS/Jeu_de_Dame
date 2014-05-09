@@ -1,6 +1,6 @@
 #ifndef PIONS_H
 #define PIONS_H
-
+#include <vector>
 
 class Pions
 {

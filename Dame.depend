@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1399365522 source:e:\espace de travail\code_blocks\c++\dame\main.cpp
+1399629949 source:e:\espace de travail\code_blocks\c++\dame\main.cpp
 	<SFML/Graphics.hpp>
 	"Damier.h"
 	"Pions.h"
@@ -339,19 +339,21 @@
 	<string>
 	<vector>
 
-1399369813 source:e:\espace de travail\code_blocks\c++\dame\src\damier.cpp
+1399640636 source:e:\espace de travail\code_blocks\c++\dame\src\damier.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
+	<string>
 	"Damier.h"
 	"Pions.h"
 
-1399369761 e:\espace de travail\code_blocks\c++\dame\include\damier.h
+1399629761 e:\espace de travail\code_blocks\c++\dame\include\damier.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<Pions.h>
 
-1399365569 source:e:\espace de travail\code_blocks\c++\dame\src\pions.cpp
+1399632624 source:e:\espace de travail\code_blocks\c++\dame\src\pions.cpp
 	"Pions.h"
 
-1399363492 e:\espace de travail\code_blocks\c++\dame\include\pions.h
+1399632623 e:\espace de travail\code_blocks\c++\dame\include\pions.h
+	<vector>
 

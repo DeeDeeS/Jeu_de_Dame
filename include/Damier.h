@@ -13,7 +13,7 @@ class Damier
 
             Damier();
             ~Damier();
-            //vector<Pions>* pos;
+
 
         private:
             Damier& operator= (const Damier&){}
